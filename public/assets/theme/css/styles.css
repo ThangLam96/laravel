@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    width: 800px;
+    height: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    border-radius: 5px;
+}
+
+.footer{
+    width: 800px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 50vh;
+    flex-direction: column;
+    background: #4c5a69b2;
+    border-radius: 15px;
+}
+
+.inputBox{
+   position: relative;
+   text-align: center;
+   width: 250px;
+}
+
+.inputBox input,textarea{
+    width: 60%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    background: #4c5a69b2;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+
+.inputBox span{
+    position: absolute;
+    right: 25%;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(12, 9, 9, 0.397);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+
+{
+    color:rgba(238, 14, 14, 0.925);
+    transform: translateX(15px) translateY(-10px);
+    font-size: 0.65em;
+    background: blue;
+    border-radius: 5px;
+}
+
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span
+
+{
+    color:rgba(238, 14, 14, 0.925);
+    transform: translateX(15px) translateY(-10px);
+    font-size: 0.85em;
+    background: blue;
+    border-radius: 5px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus
+{
+    border: 1px solid blue;
+}
+
+.inputBox textarea:valid,
+.inputBox textarea:focus
+{
+    border: 1px solid blue;
+}
+
+.Box{
+    position: relative;
+}
+
+.Box input{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
+
+.Box input:hover{
+    letter-spacing: 0.2em;
+    border: 1px solid #007bffb2;
+    background-color: aquamarine;
+}
